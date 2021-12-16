@@ -32,8 +32,8 @@ function draw() {
 
 **createCanvas():** Çizim yapılacak alanı tanımlar.
 ```JavaScript
-createCanvas(genişlik, yükseklik)
-createCanvas(genişlik, yükseklik, WEBGL)
+createCanvas(genişlik, yükseklik) // 2 boyutlu çizim için
+createCanvas(genişlik, yükseklik, WEBGL) // WEBGL modu için
 ```
 
 **line():** Çizgi çizer.
@@ -150,27 +150,27 @@ angleMode(x, y[, z])
 ```
 
 ## Değişkenler
-**frameCount:** Çizim başladığından beri kaç kere çizildiğinin sayısı
+**frameCount:** Çizim başladığından beri kaç kere çizildiğinin sayısı.
 
-**width:** Çizim alanı genişliği
+**width:** Çizim alanı genişliği.
 
-**height:** Çizim alanı yüksekliği
+**height:** Çizim alanı yüksekliği.
 
-**windowWidth:** Sayfa genişliği
+**windowWidth:** Sayfa genişliği.
 
-**windowHeight:** Sayfa yüksekliği
+**windowHeight:** Sayfa yüksekliği.
 
-**displayWidth:** Tüm ekranın genişliği
+**displayWidth:** Tüm ekranın genişliği.
 
-**displayHeight:** Tüm ekranın yüksekliği
+**displayHeight:** Tüm ekranın yüksekliği.
 
-**mouseX:** Mouse'un yatay koordinatı
+**mouseX:** Mouse'un yatay koordinatı.
 
-**mouseY:** Mouse'un dikey koordinatı
+**mouseY:** Mouse'un dikey koordinatı.
 
-**pmouseX:** Mouse'un bir önceki çizimdeki yatay koordinatı
+**pmouseX:** Mouse'un bir önceki çizimdeki yatay koordinatı.
 
-**pmouseY:** Mouse'un bir önceki çizimdeki dikey koordinatı
+**pmouseY:** Mouse'un bir önceki çizimdeki dikey koordinatı.
 
-**key:** Klavyede basılan son tuşun değeri
+**key:** Klavyede basılan son tuşun değeri.
 
