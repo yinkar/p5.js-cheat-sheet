@@ -1,0 +1,24 @@
+{
+  "name": "p5.js-cheat-sheet",
+  "version": "1.0.0",
+  "description": "p5.js cheat sheets in different languages",
+  "scripts": {
+    "build": "globstar -- md-to-pdf ./[A-Z][A-Z].md",
+    "watch": "globstar -- md-to-pdf --watch ./[A-Z][A-Z].md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinkar/p5.js-cheat-sheet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yinkar/p5.js-cheat-sheet/issues"
+  },
+  "homepage": "https://github.com/yinkar/p5.js-cheat-sheet#readme",
+  "dependencies": {
+    "globstar": "^1.0.0",
+    "md-to-pdf": "^5.0.1"
+  }
+}

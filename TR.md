@@ -68,9 +68,9 @@ rectMode(CORNER) // Sol üst köşeyi başlangıç noktası seçer ve uzunluk de
 
 rectMode(CORNERS) // Sol üst köşeyi başlangıç noktası seçer ve uzunluk parametreleri çizimin bitiş koordinatları olarak seçilir
 
-rectMode(CENTER) // Seçilen konum parametreleri dikdörtgenin orta noktası olur ve dikdörtgenin genişliği uzunluk parametreleri olarak alınır
+rectMode(CENTER) // Seçilen konum parametreleri dikdörtgenin orta noktası olur ve dikdörtgenin büyüklüğü uzunluk parametreleri olarak belirlenir
 
-rectMode(RADIUS) // Seçilen konum parametreleri dikdörtgenin orta noktası olur ve uzunluk parametreleri dikdörtgenin genişliğinin yarısını belirler
+rectMode(RADIUS) // Seçilen konum parametreleri dikdörtgenin orta noktası olur ve uzunluk parametreleri dikdörtgenin büyüklük değerlerinin yarısını belirler
 ```
 
 **ellipseMode():** Elips ve daire için, ``rectMode()`` ile aynı şekilde çalışır.
@@ -106,17 +106,17 @@ frameRate(25);
 
 **random():** İki değer arasında float formatında rastgele bir sayı döndürür.
 ```JavaScript
-rastgeleSayi = random(2, 5)
+rastgeleSayı = random(2, 5)
 ```
 
 **int():** Aldığı girdiyi integer formatına dönüştürür.
 ```JavaScript
-tamSayi = int(2.6)
+tamSayı = int(2.6)
 ```
 
 **float():** Aldığı girdiyi float formatına dönüştürür.
 ```JavaScript
-ondalikliSayi = float(4)
+ondalıklıSayı = float(4)
 ```
 
 **str():** Aldığı girdiyi string formatına dönüştürür.
@@ -126,7 +126,7 @@ metin = str(8)
 
 **abs():** Mutlak değer döndürür.
 ```JavaScript
-sayi = abs(-3)
+sayı = abs(-3)
 ```
 
 **sin():** Sinüs fonksiyonu.
@@ -147,6 +147,16 @@ angleMode(DEGREES | RADIANS)
 **createVector():** Vektör oluşturur.
 ```JavaScript
 angleMode(x, y[, z])
+```
+
+**constrain():** Bir değişkenin değerini iki değer arasında sınırlar.
+```JavaScript
+yeniDeğer = contrain(değişken, altSınır, üstSınır)
+```
+
+**map():** İki sınır değer arasında değer alabilen bir değişkenin değerini yeni iki sınır değere uygun hale getirir.
+```JavaScript
+yeniDeğer = map(değişken, mevcutAltSınır, mevcutÜstSınır, yeniAltSınır, yeniÜstSınır)
 ```
 
 ## Değişkenler
@@ -173,4 +183,3 @@ angleMode(x, y[, z])
 **pmouseY:** Mouse'un bir önceki çizimdeki dikey koordinatı.
 
 **key:** Klavyede basılan son tuşun değeri.
-
